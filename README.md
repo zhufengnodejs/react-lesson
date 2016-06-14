@@ -1,18 +1,18 @@
-## 1. Ê²Ã´ÊÇreact
-React ÊÇÒ»¸öÓÃÓÚ¹¹½¨ÓÃ»§½çÃæµÄJavaScript¿â
+## 1. ä»€ä¹ˆæ˜¯react
+React æ˜¯ä¸€ä¸ªç”¨äºæ„å»ºç”¨æˆ·ç•Œé¢çš„JavaScriptåº“
 
-[react¹ÙÍø](https://facebook.github.io/react)
-[reactÖĞÎÄÍø](http://reactjs.cn)
-[reactÖĞÎÄÍø](http://react-china.org)
-[reactÖĞÎÄÍø](http://ant.design)
+[reactå®˜ç½‘](https://facebook.github.io/react)
+[reactä¸­æ–‡ç½‘](http://reactjs.cn)
+[reactä¸­æ–‡ç½‘](http://react-china.org)
+[reactä¸­æ–‡ç½‘](http://ant.design)
 [githup](https://github.com/facebook/react)
 
-## 2. °²×°react
+## 2. å®‰è£…react
 ```sh
 $ bower install react babel --save
 ```
 
-## 3. Ö±½ÓÔÚä¯ÀÀÆ÷ÖĞÊ¹ÓÃReact
+## 3. ç›´æ¥åœ¨æµè§ˆå™¨ä¸­ä½¿ç”¨React
 ```javascript
   <script src="../bower_components/react/react.js"></script>
   <script src="../bower_components/react/react-dom.js"></script>
@@ -20,14 +20,14 @@ $ bower install react babel --save
   <script type="text/babel" src="index.js"/>
 ```
 
-* react.js ÊÇ React µÄ*ºËĞÄ*¿â
-* react-dom.js ÊÇÌá¹©Óë*DOM*Ïà¹ØµÄ¹¦ÄÜ,»áÔÚwindowÏÂÔö¼Ó`ReactDOM`ÊôĞÔ
-* browser.js µÄ×÷ÓÃÊÇ½«`JSX`Óï·¨×ªÎª`JavaScript`Óï·¨
+* react.js æ˜¯ React çš„*æ ¸å¿ƒ*åº“
+* react-dom.js æ˜¯æä¾›ä¸*DOM*ç›¸å…³çš„åŠŸèƒ½,ä¼šåœ¨windowä¸‹å¢åŠ `ReactDOM`å±æ€§
+* browser.js çš„ä½œç”¨æ˜¯å°†`JSX`è¯­æ³•è½¬ä¸º`JavaScript`è¯­æ³•
 
-> `script`ÖĞµÄ`type`ÊôĞÔÎª`text/babel`,ÒòÎªReact¶ÀÓĞµÄJSXÓï·¨,¸úJavaScript²»¼æÈİ
+> `script`ä¸­çš„`type`å±æ€§ä¸º`text/babel`,å› ä¸ºReactç‹¬æœ‰çš„JSXè¯­æ³•,è·ŸJavaScriptä¸å…¼å®¹
 
 ## 4. ReactDOM.render
-`ReactDOM.render` ÊÇ `React` µÄ×î»ù±¾·½·¨,ÓÃÓÚ½«±êÇ©Ä£°å×ªÎªHTMLÓïÑÔ£¬²¢²åÈëÖ¸¶¨µÄDOM½Úµã
+`ReactDOM.render` æ˜¯ `React` çš„æœ€åŸºæœ¬æ–¹æ³•,ç”¨äºå°†æ ‡ç­¾æ¨¡æ¿è½¬ä¸ºHTMLè¯­è¨€ï¼Œå¹¶æ’å…¥æŒ‡å®šçš„DOMèŠ‚ç‚¹
 ### 4.1. index.html
 
 ```diff
@@ -39,21 +39,21 @@ $ bower install react babel --save
 
 ```javascript
     ReactDOM.render(
-    <h1>Öé·åÅàÑµ</h1>,
+    <h1>ç å³°åŸ¹è®­</h1>,
         document.getElementById('app')
     );
 ```
-> ÉÏÃæ´úÂë½«Ò»¸öh1±êÌâ£¬²åÈëappÔªËØÄÚ²¿
+> ä¸Šé¢ä»£ç å°†ä¸€ä¸ªh1æ ‡é¢˜ï¼Œæ’å…¥appå…ƒç´ å†…éƒ¨
 
-## 5. JSX Óï·¨
-ÊÇÒ»ÖÖJSºÍHTML»ìºÏµÄÓï·¨,½«×é¼şµÄ*½á¹¹*¡¢*Êı¾İ*ÉõÖÁ*ÑùÊ½*¶¼¾ÛºÏÔÚÒ»Æğ¶¨Òå×é¼ş,»á±àÒë³ÉÆÕÍ¨µÄJavascript¡£
-* Óöµ½HTML±êÇ©(ÒÔ < ¿ªÍ·)£¬¾ÍÓÃ*HTML*¹æÔò½âÎö
-* Óöµ½´úÂë¿é(ÒÔ { ¿ªÍ·)£¬¾ÍÓÃ*JavaScript*¹æÔò½âÎö
-* Ê¹ÓÃÑùÊ½Ê±¿ÉÒÔÈÃstyleµÈÓÚÒ»¸öÑùÊ½¶ÔÏó
-* Ê¹ÓÃÑùÊ½ÀàÊ±Ö»ÄÜÊ¹ÓÃ`className=ÀàÃû`,ÒòÎªclassÊÇJavascript¹Ø¼ü×Ö
+## 5. JSX è¯­æ³•
+æ˜¯ä¸€ç§JSå’ŒHTMLæ··åˆçš„è¯­æ³•,å°†ç»„ä»¶çš„*ç»“æ„*ã€*æ•°æ®*ç”šè‡³*æ ·å¼*éƒ½èšåˆåœ¨ä¸€èµ·å®šä¹‰ç»„ä»¶,ä¼šç¼–è¯‘æˆæ™®é€šçš„Javascriptã€‚
+* é‡åˆ°HTMLæ ‡ç­¾(ä»¥ < å¼€å¤´)ï¼Œå°±ç”¨*HTML*è§„åˆ™è§£æ
+* é‡åˆ°ä»£ç å—(ä»¥ { å¼€å¤´)ï¼Œå°±ç”¨*JavaScript*è§„åˆ™è§£æ
+* ä½¿ç”¨æ ·å¼æ—¶å¯ä»¥è®©styleç­‰äºä¸€ä¸ªæ ·å¼å¯¹è±¡
+* ä½¿ç”¨æ ·å¼ç±»æ—¶åªèƒ½ä½¿ç”¨`className=ç±»å`,å› ä¸ºclassæ˜¯Javascriptå…³é”®å­—
 
 ```javascript
-var persons = ['ÁõµÂ»ª', '·¶±ù±ù', '¹ùÔ¾'];
+var persons = ['åˆ˜å¾·å', 'èŒƒå†°å†°', 'éƒ­è·ƒ'];
 var style = {color:'red'};
 ReactDOM.render(
   <div>
@@ -68,19 +68,19 @@ ReactDOM.render(
 ```
 
 
-## 6. ¶¨Òå×é¼ş
-ÎÒÃÇ¿ÉÒÔºÜÖ±¹ÛµÄ½«Ò»¸ö¸´ÔÓµÄÒ³Ãæ·Ö¸î³ÉÈô¸É¸ö¶ÀÁ¢×é¼ş,Ã¿¸ö×é¼ş°üº¬×Ô¼ºµÄÂß¼­ºÍÑùÊ½  
-ÔÙ½«ÕâĞ©¶ÀÁ¢×é¼ş×éºÏÍê³ÉÒ»¸ö¸´ÔÓµÄÒ³Ãæ¡£  
-ÕâÑù¼È¼õÉÙÁËÂß¼­¸´ÔÓ¶È£¬ÓÖÊµÏÖÁË´úÂëµÄÖØÓÃ
-- ¿É×éºÏ£ºÒ»¸ö×é¼ş¿ÉÒÔºÍÆäËûµÄ×é¼şÒ»ÆğÊ¹ÓÃ»òÕß¿ÉÒÔÖ±½ÓÇ¶Ì×ÔÚÁíÒ»¸ö×é¼şÄÚ²¿
-- ¿ÉÖØÓÃ£ºÃ¿¸ö×é¼ş¶¼ÊÇ¾ßÓĞ¶ÀÁ¢¹¦ÄÜµÄ£¬Ëü¿ÉÒÔ±»Ê¹ÓÃÔÚ¶à¸ö³¡¾°ÖĞ
-- ¿ÉÎ¬»¤£ºÃ¿¸öĞ¡µÄ×é¼ş½ö½ö°üº¬×ÔÉíµÄÂß¼­£¬¸üÈİÒ×±»Àí½âºÍÎ¬»¤
+## 6. å®šä¹‰ç»„ä»¶
+æˆ‘ä»¬å¯ä»¥å¾ˆç›´è§‚çš„å°†ä¸€ä¸ªå¤æ‚çš„é¡µé¢åˆ†å‰²æˆè‹¥å¹²ä¸ªç‹¬ç«‹ç»„ä»¶,æ¯ä¸ªç»„ä»¶åŒ…å«è‡ªå·±çš„é€»è¾‘å’Œæ ·å¼  
+å†å°†è¿™äº›ç‹¬ç«‹ç»„ä»¶ç»„åˆå®Œæˆä¸€ä¸ªå¤æ‚çš„é¡µé¢ã€‚  
+è¿™æ ·æ—¢å‡å°‘äº†é€»è¾‘å¤æ‚åº¦ï¼Œåˆå®ç°äº†ä»£ç çš„é‡ç”¨
+- å¯ç»„åˆï¼šä¸€ä¸ªç»„ä»¶å¯ä»¥å’Œå…¶ä»–çš„ç»„ä»¶ä¸€èµ·ä½¿ç”¨æˆ–è€…å¯ä»¥ç›´æ¥åµŒå¥—åœ¨å¦ä¸€ä¸ªç»„ä»¶å†…éƒ¨
+- å¯é‡ç”¨ï¼šæ¯ä¸ªç»„ä»¶éƒ½æ˜¯å…·æœ‰ç‹¬ç«‹åŠŸèƒ½çš„ï¼Œå®ƒå¯ä»¥è¢«ä½¿ç”¨åœ¨å¤šä¸ªåœºæ™¯ä¸­
+- å¯ç»´æŠ¤ï¼šæ¯ä¸ªå°çš„ç»„ä»¶ä»…ä»…åŒ…å«è‡ªèº«çš„é€»è¾‘ï¼Œæ›´å®¹æ˜“è¢«ç†è§£å’Œç»´æŠ¤
 
-### 6.1 ¶¨Òå×é¼ş
-ReactÔÊĞí½«´úÂë·â×°³É×é¼ş£¬È»ºóÏñ²åÈëÆÕÍ¨HTML±êÇ©Ò»Ñù£¬ÔÚÍøÒ³ÖĞ²åÈëÕâ¸ö×é¼ş
+### 6.1 å®šä¹‰ç»„ä»¶
+Reactå…è®¸å°†ä»£ç å°è£…æˆç»„ä»¶ï¼Œç„¶ååƒæ’å…¥æ™®é€šHTMLæ ‡ç­¾ä¸€æ ·ï¼Œåœ¨ç½‘é¡µä¸­æ’å…¥è¿™ä¸ªç»„ä»¶
 
-* ×é¼şÀàµÄµÚÒ»¸ö×ÖÄ¸±ØĞë*´óĞ´*
-* ×é¼şÀà*ÄÜÇÒÖ»ÄÜ*°üº¬Ò»¸ö*¶¥²ã±êÇ©* 
+* ç»„ä»¶ç±»çš„ç¬¬ä¸€ä¸ªå­—æ¯å¿…é¡»*å¤§å†™*
+* ç»„ä»¶ç±»*èƒ½ä¸”åªèƒ½*åŒ…å«ä¸€ä¸ª*é¡¶å±‚æ ‡ç­¾* 
 
 ```javascript
 var Message = React.createClass({
@@ -94,36 +94,36 @@ ReactDOM.render(
 );
 ```
 
-### 6.2 ×é¼şµÄÊôĞÔ
-* Ã¿¸ö×é¼ş¿ÉÒÔÓĞ×Ô¼ºµÄÊôĞÔ,Ò»°ãÓÃÀ´´æ·Å×é¼ş³õÊ¼ºó²»±äµÄÊı¾İ,±ÈÈçÈËµÄĞÔ±ğ£¬ĞÕÃûµÈ
-* ÊôĞÔÒ»°ãÓÃ×÷×é¼şµÄÊı¾İÔ´£¬Ò»°ãÓÉ¸¸×é¼ş´«Èë,±ÈÈçÄãµÄÃû×ÖÒ»°ãÊÇÓÉÄã¸¸Ä¸È¡µÄ
-* ÊôĞÔ¿ÉÒÔÍ¨¹ı`this.props`ÖĞÈ¡³ö
-* *propTypes*¿ÉÒÔÓÃÀ´¶¨Òå´«Èë×é¼şÊôĞÔµÄÃû³ÆºÍÀàĞÍ
-* `getDefaultProps`º¯Êı¿ÉÒÔÓÃÀ´¶¨»áÒıÆğ×é¼şµÄÄ¬ÈÏÊôĞÔ
+### 6.2 ç»„ä»¶çš„å±æ€§
+* æ¯ä¸ªç»„ä»¶å¯ä»¥æœ‰è‡ªå·±çš„å±æ€§,ä¸€èˆ¬ç”¨æ¥å­˜æ”¾ç»„ä»¶åˆå§‹åä¸å˜çš„æ•°æ®,æ¯”å¦‚äººçš„æ€§åˆ«ï¼Œå§“åç­‰
+* å±æ€§ä¸€èˆ¬ç”¨ä½œç»„ä»¶çš„æ•°æ®æºï¼Œä¸€èˆ¬ç”±çˆ¶ç»„ä»¶ä¼ å…¥,æ¯”å¦‚ä½ çš„åå­—ä¸€èˆ¬æ˜¯ç”±ä½ çˆ¶æ¯å–çš„
+* å±æ€§å¯ä»¥é€šè¿‡`this.props`ä¸­å–å‡º
+* *propTypes*å¯ä»¥ç”¨æ¥å®šä¹‰ä¼ å…¥ç»„ä»¶å±æ€§çš„åç§°å’Œç±»å‹
+* `getDefaultProps`å‡½æ•°å¯ä»¥ç”¨æ¥å®šä¼šå¼•èµ·ç»„ä»¶çš„é»˜è®¤å±æ€§
 
 ```javascript
  var Person = React.createClass({
-     propTypes: { //ÀàËÆÓÚÔ¼¶¨ÁËÒ»¸ö½Ó¿ÚÎÄµµ,ÓÃÓÚÕâÊÇÑéÖ¤´«µİ¸ø×é¼şµÄÊôĞÔ£¬
-         name: React.PropTypes.string.isRequired, //¶¨ÒåmsgµÄÊôĞÔÀàĞÍÎª×Ö·û´®£¬±ØĞë´«Èë
+     propTypes: { //ç±»ä¼¼äºçº¦å®šäº†ä¸€ä¸ªæ¥å£æ–‡æ¡£,ç”¨äºè¿™æ˜¯éªŒè¯ä¼ é€’ç»™ç»„ä»¶çš„å±æ€§ï¼Œ
+         name: React.PropTypes.string.isRequired, //å®šä¹‰msgçš„å±æ€§ç±»å‹ä¸ºå­—ç¬¦ä¸²ï¼Œå¿…é¡»ä¼ å…¥
          gender: React.PropTypes.number.isRequired
      },
-     getDefaultProps:function(){ //ÉèÖÃÄ¬ÈÏÊôĞÔ£¬Èç¹ûÉÏ¼¶×é¼ş²»´«¾ÍÊ¹ÓÃÄ¬ÈÏÖµ
-         return {name:'ÎŞÃûÊÏ',age:0}
+     getDefaultProps:function(){ //è®¾ç½®é»˜è®¤å±æ€§ï¼Œå¦‚æœä¸Šçº§ç»„ä»¶ä¸ä¼ å°±ä½¿ç”¨é»˜è®¤å€¼
+         return {name:'æ— åæ°',age:0}
      },
      render: function() {
-         return (<h1> {this.props.name} {this.props.gender}</h1>);//ÊôĞÔ¿ÉÒÔÍ¨¹ıÊôĞÔ¶ÔÏóthis.propsÖĞÈ¡³ö
+         return (<h1> {this.props.name} {this.props.gender}</h1>);//å±æ€§å¯ä»¥é€šè¿‡å±æ€§å¯¹è±¡this.propsä¸­å–å‡º
      }
  });
  
  ReactDOM.render(
-     <Person gender="ÄĞ" />,//ÊôĞÔ¿ÉÒÔÔÚÊ¹ÓÃ×é¼şÊ±´«Èë
+     <Person gender="ç”·" />,//å±æ€§å¯ä»¥åœ¨ä½¿ç”¨ç»„ä»¶æ—¶ä¼ å…¥
      document.getElementById('app')
  );
 ```
 
 ### 6.3 this.props.children
-`this.props`¶ÔÏóµÄÊôĞÔÓë×é¼şÊµÀıµÄÊôĞÔÒ»Ò»¶ÔÓ¦,µ«`this.props.children`ÊôĞÔ±íÊ¾×é¼şµÄËùÓĞ×Ó½Úµã
-`React.Children.map`ÊÇÒ»¸ö¹¤¾ß·½·¨£¬ÓÃÓÚÊµÏÖ¶ÔÊı×éÔªËØµÄÓ³Éä
+`this.props`å¯¹è±¡çš„å±æ€§ä¸ç»„ä»¶å®ä¾‹çš„å±æ€§ä¸€ä¸€å¯¹åº”,ä½†`this.props.children`å±æ€§è¡¨ç¤ºç»„ä»¶çš„æ‰€æœ‰å­èŠ‚ç‚¹
+`React.Children.map`æ˜¯ä¸€ä¸ªå·¥å…·æ–¹æ³•ï¼Œç”¨äºå®ç°å¯¹æ•°ç»„å…ƒç´ çš„æ˜ å°„
 ```javascript
 var Person = React.createClass({
     render: function() {
@@ -141,19 +141,19 @@ var Person = React.createClass({
 
 ReactDOM.render(
     <Person>
-        <span>´óÃ«</span>
-        <span>¶şÃ«</span>
-        <span>ÈıÃ«</span>
+        <span>å¤§æ¯›</span>
+        <span>äºŒæ¯›</span>
+        <span>ä¸‰æ¯›</span>
     </Person>,
     document.getElementById('app')
 );
 ```
 
-### 6.4 state×´Ì¬
-- ×é¼şµÄ×´Ì¬¾ÍÏñÈËµÄĞÄÇé£¬»á¾­³£±ä»¯£¬¶øÇÒÖ»ÄÜÓÉ×Ô¼ºÀ´¸Ä±ä  
-- ×é¼şÒ»¿ªÊ¼ÓĞÒ»¸ö³õÊ¼×´Ì¬,È»ºóÓÃ»§»¥¶¯,µ¼ÖÂ×´Ì¬±ä»¯£¬´Ó¶ø´¥·¢½çÃæÖØĞÂäÖÈ¾
-* `getInitialState`ÓÃÀ´¶¨Òå³õÊ¼×´Ì¬
-- ¿ÉÒÔ¸ø°´Å¥°ó¶¨ÊÂ¼ş£¬µ±ÊÂ¼ş·¢ÉúµÄÊ±ºòµ÷ÓÃ¶ÔÓ¦µÄ·½·¨¸Ä±ä×é¼şµÄ×´Ì¬
+### 6.4 stateçŠ¶æ€
+- ç»„ä»¶çš„çŠ¶æ€å°±åƒäººçš„å¿ƒæƒ…ï¼Œä¼šç»å¸¸å˜åŒ–ï¼Œè€Œä¸”åªèƒ½ç”±è‡ªå·±æ¥æ”¹å˜  
+- ç»„ä»¶ä¸€å¼€å§‹æœ‰ä¸€ä¸ªåˆå§‹çŠ¶æ€,ç„¶åç”¨æˆ·äº’åŠ¨,å¯¼è‡´çŠ¶æ€å˜åŒ–ï¼Œä»è€Œè§¦å‘ç•Œé¢é‡æ–°æ¸²æŸ“
+* `getInitialState`ç”¨æ¥å®šä¹‰åˆå§‹çŠ¶æ€
+- å¯ä»¥ç»™æŒ‰é’®ç»‘å®šäº‹ä»¶ï¼Œå½“äº‹ä»¶å‘ç”Ÿçš„æ—¶å€™è°ƒç”¨å¯¹åº”çš„æ–¹æ³•æ”¹å˜ç»„ä»¶çš„çŠ¶æ€
 
 ```javascript
 var Person = React.createClass({
@@ -162,42 +162,42 @@ var Person = React.createClass({
     },
 
     getDefaultProps:function(){
-        return {name:'ÎŞÃûÊÏ'};
+        return {name:'æ— åæ°'};
     },
     handleClick: function(event) {
         this.setState({happy: !this.state.happy});
     },
     render: function() {
-        var heart = this.state.happy ? '¿ªĞÄ' : '²»¿ªĞÄ';
+        var heart = this.state.happy ? 'å¼€å¿ƒ' : 'ä¸å¼€å¿ƒ';
         return (
             <p >
-                 {this.props.name} {heart} <br/><button onClick={this.handleClick}>±äĞÄ</button>
+                 {this.props.name} {heart} <br/><button onClick={this.handleClick}>å˜å¿ƒ</button>
             </p>
         );
     }
 });
 
 ReactDOM.render(
-    <Person name="ÁÖÖ¾Áá" />,
+    <Person name="æ—å¿—ç²" />,
     document.getElementById('app')
 );
 ```
 
-³£ÓÃµÄÊÂ¼ş
+å¸¸ç”¨çš„äº‹ä»¶
 ```javascript
-¼ôÌù°åÊÂ¼ş onKeyDown onKeyPress onKeyUp
-¼üÅÌÊÂ¼ş onFocus onBlur
-½¹µãÊÂ¼ş onChange onInput onSubmit
-Êó±êÊÂ¼ş onClick onDoubleClick onMouseDown onMouseEnter onMouseLeave
+å‰ªè´´æ¿äº‹ä»¶ onKeyDown onKeyPress onKeyUp
+é”®ç›˜äº‹ä»¶ onFocus onBlur
+ç„¦ç‚¹äº‹ä»¶ onChange onInput onSubmit
+é¼ æ ‡äº‹ä»¶ onClick onDoubleClick onMouseDown onMouseEnter onMouseLeave
 ```
 
-### 6.5 ±íµ¥ÔªËØË«ÏòÊı¾İ°ó¶¨
+### 6.5 è¡¨å•å…ƒç´ åŒå‘æ•°æ®ç»‘å®š
 ```javascript
 var Input = React.createClass({
-    getInitialState: function() {//»ñÈ¡³õÊ¼×´Ì¬
-        return {value: 'Öé·åÅàÑµ'};
+    getInitialState: function() {//è·å–åˆå§‹çŠ¶æ€
+        return {value: 'ç å³°åŸ¹è®­'};
     },
-    handleChange: function(event) { //´¦Àí¸Ä±äÊÂ¼ş
+    handleChange: function(event) { //å¤„ç†æ”¹å˜äº‹ä»¶
         this.setState({value: event.target.value});
     },
     render: function () {
@@ -213,10 +213,10 @@ var Input = React.createClass({
 
 ReactDOM.render(<Input/>, document.getElementById('app'));
 ```
-> ×¢Òâ: Èç¹û¸ø±íµ¥ÔªËØÉèÖÃÁË`value`ÊôĞÔ£¬Ôò±ØĞëÖ¸¶¨`onChange`ÊÂ¼ş´¦Àíº¯Êı£¬·ñÔò ´Ë×Ö¶Î»á±ä³ÉÖ»¶Á×´Ì¬ 
+> æ³¨æ„: å¦‚æœç»™è¡¨å•å…ƒç´ è®¾ç½®äº†`value`å±æ€§ï¼Œåˆ™å¿…é¡»æŒ‡å®š`onChange`äº‹ä»¶å¤„ç†å‡½æ•°ï¼Œå¦åˆ™ æ­¤å­—æ®µä¼šå˜æˆåªè¯»çŠ¶æ€ 
  
-## 7. ¸´ºÏ×é¼ş
-¶à¸ö¼òµ¥µÄ×é¼şÇ¶Ì×£¬¿É¹¹³ÉÒ»¸ö¸´ÔÓµÄ¸´ºÏ×é¼ş£¬´Ó¶øÍê³É¸´ÔÓµÄ½»»¥Âß¼­
+## 7. å¤åˆç»„ä»¶
+å¤šä¸ªç®€å•çš„ç»„ä»¶åµŒå¥—ï¼Œå¯æ„æˆä¸€ä¸ªå¤æ‚çš„å¤åˆç»„ä»¶ï¼Œä»è€Œå®Œæˆå¤æ‚çš„äº¤äº’é€»è¾‘
 ```javascript
 var Panel = React.createClass({
     render: function () {
@@ -253,31 +253,31 @@ var PanelBody = React.createClass({
 
 ReactDOM.render(
     <Panel
-        head="Í·²¿"
-        body="ÕıÎÄ"
+        head="å¤´éƒ¨"
+        body="æ­£æ–‡"
     />,
     document.getElementById('app')
 );
 ```
 
 
-## 8. ×é¼şµÄÉúÃüÖÜÆÚ
-ReactÖĞ¿ÉÒÔÖ¸¶¨ÔÚ×é¼şµÄÉúÃüÖÜÆÚµÄ²»Í¬½×¶ÎÖ´ĞĞµÄº¯Êı
-- äÖÈ¾Ç°
-    - getDefaultProps  ÔÚ×é¼şÀà´´½¨µÄÊ±ºòµ÷ÓÃÒ»´Î,Ôò´Ë´¦·µ»ØµÄ¶ÔÏóÖĞµÄÏàÓ¦ÊôĞÔ½«»áºÏ²¢µ½`this.props`
-    - getInitialState ÔÚ×é¼ş¹ÒÔØÖ®Ç°µ÷ÓÃÒ»´Î¡£·µ»ØÖµ½«»á×÷Îª`this.state`µÄ³õÊ¼Öµ¡£
-    - componentWillMount ÔÚÊ×´ÎäÖÈ¾Ö®Ç°´¥·¢
-- äÖÈ¾    
-    - render µ±µ÷ÓÃµÄÊ±ºò£¬»á¼ì²â`this.props`ºÍ`this.state`£¬·µ»ØÒ»¸ö×é¼ş
-- äÖÈ¾ºó    
-    - componentDidMount ÔÚ³õÊ¼»¯äÖÈ¾Ö´ĞĞÖ®ºóÁ¢¿Ìµ÷ÓÃÒ»´Î
-    - shouldComponentUpdate ÔÚ½ÓÊÕµ½ĞÂµÄ`props`»òÕß`state`£¬½«ÒªäÖÈ¾Ö®Ç°µ÷ÓÃ,·µ»Ø`false`Ôò²»¸üĞÂ×é¼ş
-    - componentWillUpdate ×öÒ»Ğ©¸üĞÂÖ®Ç°µÄ×¼±¸¹¤×÷
-    - componentDidUpdate ¸üĞÂÖ®ºó´¥·¢
-    - componentWillReceiveProps ÔÚ×é¼ş½ÓÊÕµ½ĞÂµÄ`props`µÄÊ±ºòµ÷ÓÃ  
-- ÒÆ³ı    
-    - componentWillUnmount ÔÚ×é¼ş´ÓDOMÖĞÒÆ³ıµÄÊ±ºòÁ¢¿Ì±»µ÷ÓÃ
-    - componentDidUnmount ×é¼şÒÆ³ıÖ®ºóµ÷ÓÃ
+## 8. ç»„ä»¶çš„ç”Ÿå‘½å‘¨æœŸ
+Reactä¸­å¯ä»¥æŒ‡å®šåœ¨ç»„ä»¶çš„ç”Ÿå‘½å‘¨æœŸçš„ä¸åŒé˜¶æ®µæ‰§è¡Œçš„å‡½æ•°
+- æ¸²æŸ“å‰
+    - getDefaultProps  åœ¨ç»„ä»¶ç±»åˆ›å»ºçš„æ—¶å€™è°ƒç”¨ä¸€æ¬¡,åˆ™æ­¤å¤„è¿”å›çš„å¯¹è±¡ä¸­çš„ç›¸åº”å±æ€§å°†ä¼šåˆå¹¶åˆ°`this.props`
+    - getInitialState åœ¨ç»„ä»¶æŒ‚è½½ä¹‹å‰è°ƒç”¨ä¸€æ¬¡ã€‚è¿”å›å€¼å°†ä¼šä½œä¸º`this.state`çš„åˆå§‹å€¼ã€‚
+    - componentWillMount åœ¨é¦–æ¬¡æ¸²æŸ“ä¹‹å‰è§¦å‘
+- æ¸²æŸ“    
+    - render å½“è°ƒç”¨çš„æ—¶å€™ï¼Œä¼šæ£€æµ‹`this.props`å’Œ`this.state`ï¼Œè¿”å›ä¸€ä¸ªç»„ä»¶
+- æ¸²æŸ“å    
+    - componentDidMount åœ¨åˆå§‹åŒ–æ¸²æŸ“æ‰§è¡Œä¹‹åç«‹åˆ»è°ƒç”¨ä¸€æ¬¡
+    - shouldComponentUpdate åœ¨æ¥æ”¶åˆ°æ–°çš„`props`æˆ–è€…`state`ï¼Œå°†è¦æ¸²æŸ“ä¹‹å‰è°ƒç”¨,è¿”å›`false`åˆ™ä¸æ›´æ–°ç»„ä»¶
+    - componentWillUpdate åšä¸€äº›æ›´æ–°ä¹‹å‰çš„å‡†å¤‡å·¥ä½œ
+    - componentDidUpdate æ›´æ–°ä¹‹åè§¦å‘
+    - componentWillReceiveProps åœ¨ç»„ä»¶æ¥æ”¶åˆ°æ–°çš„`props`çš„æ—¶å€™è°ƒç”¨  
+- ç§»é™¤    
+    - componentWillUnmount åœ¨ç»„ä»¶ä»DOMä¸­ç§»é™¤çš„æ—¶å€™ç«‹åˆ»è¢«è°ƒç”¨
+    - componentDidUnmount ç»„ä»¶ç§»é™¤ä¹‹åè°ƒç”¨
  
 ```javascript
 var MessageBox = React.createClass({
@@ -321,9 +321,9 @@ var MessageBox = React.createClass({
     render: function () {
         return (
             <div>
-                <h1 > ¼ÆÊı£º {this.state.count}</h1>
-                <button onClick={this.killMySelf}>Ğ¶ÔØµôÕâ¸ö×é¼ş</button>
-                <button onClick={this.doUpdate}>ÊÖ¶¯¸üĞÂÒ»ÏÂ×é¼ş£¨°üÀ¨×Ó×é¼ş£©</button>
+                <h1 > è®¡æ•°ï¼š {this.state.count}</h1>
+                <button onClick={this.killMySelf}>å¸è½½æ‰è¿™ä¸ªç»„ä»¶</button>
+                <button onClick={this.doUpdate}>æ‰‹åŠ¨æ›´æ–°ä¸€ä¸‹ç»„ä»¶ï¼ˆåŒ…æ‹¬å­ç»„ä»¶ï¼‰</button>
                 <Submessage count={this.state.count}/>
             </div>
         )
@@ -341,7 +341,7 @@ var Submessage = React.createClass({
     },
     render: function () {
         return (
-            <h3>µ±Ç°¼ÆÊıÊÇ£º{this.props.count}</h3>
+            <h3>å½“å‰è®¡æ•°æ˜¯ï¼š{this.props.count}</h3>
         )
     }
 });
@@ -349,10 +349,10 @@ var Submessage = React.createClass({
 ReactDOM.render(<MessageBox/>, document.getElementById('app'));
 ```
 
-> ReactDOM.unmountComponentAtNode ´ÓDOMÖĞÒÆ³ıÒÑ¾­¹ÒÔØµÄReact×é¼ş
+> ReactDOM.unmountComponentAtNode ä»DOMä¸­ç§»é™¤å·²ç»æŒ‚è½½çš„Reactç»„ä»¶
 
-## 9. DOM²Ù×÷
-¸ø×é¼ş¼ÓÉÏ`ref="xxx"`ºó£¬¿ÉÔÚ¸¸×é¼şÖĞÍ¨¹ı`this.refs.xxx`»ñÈ¡¸ÃDOMÔªËØ
+## 9. DOMæ“ä½œ
+ç»™ç»„ä»¶åŠ ä¸Š`ref="xxx"`åï¼Œå¯åœ¨çˆ¶ç»„ä»¶ä¸­é€šè¿‡`this.refs.xxx`è·å–è¯¥DOMå…ƒç´ 
 ```javascript
 var Focus = React.createClass({
     handleClick: function() {
@@ -362,7 +362,7 @@ var Focus = React.createClass({
         return (
             <div>
                 <input type="text" ref="msg" />
-                <input type="button" value="»ñµÃ½¹µã" onClick={this.handleClick} />
+                <input type="button" value="è·å¾—ç„¦ç‚¹" onClick={this.handleClick} />
             </div>
         );
     }
@@ -374,7 +374,7 @@ ReactDOM.render(
 );
 ```
 
-## 10.Í¨¹ıAjax»ñÈ¡Êı¾İ
+## 10.é€šè¿‡Ajaxè·å–æ•°æ®
 ```
 var Suggestion = React.createClass({
     getInitialState:function(){
@@ -416,7 +416,7 @@ ReactDOM.render(<Suggestion></Suggestion>, document.getElementById('app'));
 
 
 ## 11. mixin
-¹«ÓÃ³éÈ¡³öÀ´,ÈÃ²»Í¬µÄ×é¼ş¹²ÓÃÍ¬Ò»²¿·ÖÂß¼­£¬ÊµÏÖ´úÂëÖØÓÃ
+å…¬ç”¨æŠ½å–å‡ºæ¥,è®©ä¸åŒçš„ç»„ä»¶å…±ç”¨åŒä¸€éƒ¨åˆ†é€»è¾‘ï¼Œå®ç°ä»£ç é‡ç”¨
 ```javascript
 var counterMix = {
     getInitialState:function(){
@@ -435,7 +435,7 @@ var Counter1 = React.createClass({
        return (
            <div>
                {this.state.count}
-               <button onClick={this.handleClick}>Ôö¼Ó</button>
+               <button onClick={this.handleClick}>å¢åŠ </button>
            </div>
        )
    }
@@ -446,7 +446,7 @@ var Counter2 = React.createClass({
         return (
             <div>
                 {this.state.count}
-                <button onClick={this.handleClick}>Ôö¼Ó</button>
+                <button onClick={this.handleClick}>å¢åŠ </button>
             </div>
         )
     }

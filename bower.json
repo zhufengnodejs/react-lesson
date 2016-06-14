@@ -1,0 +1,23 @@
+{
+  "name": "react-lesson",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "zhufengnodejs <zhufengnodejs@126.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/zhufengnodejs/react-lesson",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "babel": "*",
+    "react": "^15.1.0",
+    "bootstrap": "^3.3.6"
+  }
+}
